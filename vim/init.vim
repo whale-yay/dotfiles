@@ -34,6 +34,10 @@ if dein#check_install()
 endif
 
 "setting
+colorscheme gruvbox
+set background=dark
+set t_Co=256
+
 "文字コードをUFT-8に設定
 set fenc=utf-8
 " バックアップファイルを作らない
