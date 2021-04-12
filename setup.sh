@@ -1,1 +1,1 @@
-ln -s ~/dotfiles/vim/init.vim ~/.config/nvim/init.vim
+ln -s $HOME/dotfiles/vim/init.vim $HOME/.config/nvim/init.vim
