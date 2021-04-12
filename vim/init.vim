@@ -1,5 +1,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'morhetz/gruvbox'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
 call plug#end()
 
 colorscheme gruvbox
