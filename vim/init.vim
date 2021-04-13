@@ -6,6 +6,17 @@ Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
+let mapleader = '\<Space>'
+nnoremap <leader>q :q!<cr>
+
+
+" vim-go keybind
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+nnoremap <leader>a :cclose<CR>
+autocmd FileType go nmap <leader>b <Plug>(go-build)
+autocmd FileType go nmap <leader>r <Plug>(go-run)
+
 
 " easymotion keybind
 
@@ -64,4 +75,5 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 
 " jj
+set clipboard=unnamed
 inoremap <silent> jj <ESC>
