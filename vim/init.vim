@@ -75,5 +75,4 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 
 " jj
-set clipboard=unnamed
 inoremap <silent> jj <ESC>
