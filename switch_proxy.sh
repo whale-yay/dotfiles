@@ -1,4 +1,4 @@
-source $HOME/dotfiles/.env.sh
+source $HOME/dotfiles/env.sh
 
 _RESOLV_CONF='/etc/resolv.conf'
 
