@@ -1,7 +1,10 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'Shougo/deoplete.nvim'
+Plug 'lighttiger2505/deoplete-vim-lsp'
 Plug 'morhetz/gruvbox'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'easymotion/vim-easymotion'
 
 call plug#end()
@@ -9,6 +12,8 @@ call plug#end()
 let mapleader = '\<Space>'
 nnoremap <leader>q :q!<cr>
 
+" Use deoplete
+let g:deoplete#enable_at_startup = 1
 
 " vim-go keybind
 map <C-n> :cnext<CR>
