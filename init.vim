@@ -9,8 +9,11 @@ Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
-let mapleader = '\<Space>'
-nnoremap <leader>q :q!<cr>
+let mapleader = ' '
+nnoremap <leader>o o<ESC>
+nnoremap <leader>O O<ESC>
+nnoremap <leader>w :w<cr>
+nnoremap <leader>q :q<cr>
 
 " Use deoplete
 let g:deoplete#enable_at_startup = 1
@@ -36,9 +39,6 @@ autocmd FileType go nmap <leader>r <Plug>(go-run)
 " s{char}{char} to move to {char}{char}
 nmap s <Plug>(easymotion-overwin-f2)
 vmap s <Plug>(easymotion-bd-f2)
-" Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 
 " color visual
