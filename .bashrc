@@ -128,3 +128,4 @@ alias so="source"
 source $HOME/dotfiles/switch_proxy.sh
 
 alias dc='docker-compose'
+export GOROOT="/usr/local/go"
