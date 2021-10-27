@@ -118,14 +118,17 @@ if ! shopt -oq posix; then
 fi
 
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/home/$USER/.local/bin
 
 # remap caps to ctrl for gnome
 gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
 
-alias bd="cd ../"
-alias so="source"
-
 source $HOME/dotfiles/switch_proxy.sh
 
+alias bd="cd ../"
+alias so="source"
 alias dc='docker-compose'
+alias ivm="vim"
+alias imv="vim"
+
 export GOROOT="/usr/local/go"
