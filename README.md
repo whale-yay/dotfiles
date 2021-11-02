@@ -2,6 +2,6 @@
 ### .envを設定
 #### _PROXYと_DNS 
 
-# その他の設定
+# memo
 ### sudo -E をしたくないとき
-#### https://wiki.archlinux.jp/index.php/Sudo
+#### 
