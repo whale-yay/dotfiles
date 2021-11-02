@@ -89,6 +89,8 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " jj
 inoremap <silent> jj <ESC>
 
+" clipboard
+set clipboard+=unnamedplus
 
 " templete setting
 autocmd BufNewFile docker-compose.yml :0r ~/.config/nvim/templete/templete.yml

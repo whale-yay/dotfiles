@@ -128,7 +128,10 @@ source $HOME/dotfiles/switch_proxy.sh
 alias bd="cd ../"
 alias so="source"
 alias dc='docker-compose'
+alias lt='tree'
 alias ivm="vim"
 alias imv="vim"
 
 export GOROOT="/usr/local/go"
+
+
