@@ -19,6 +19,9 @@
 ###すべてのコンテナを削除（停止中のみ）
 ####docker rm $(docker ps -q -a)
 
+###Docker-Composeのすべてのイメージ、コンテナを削除
+####docker-compose down --rmi all --volumes --remove-orphans
+
 ###テスト環境ではdocker-composeの restart:Always と tty:True は使わない
 ####restart:Always コンテナが10秒以上稼働していた場合、コンテナが終了すると再起動する　
 ####ttyをTrueに設定するとコンテナに仮想端末を作らせてコンテナを終了させない
