@@ -13,7 +13,7 @@ if [ -n "$_DNS_STATE" ] ; then
   git config --global http.proxy "$http_proxy"
   git config --global https.proxy "$http_proxy"
 
-  echo -e '\e[31mSet proxy settings\e[m' >&2
+  echo -e '\e[36mSet proxy settings\e[m' >&2
 
 else
   export http_proxy=''
@@ -24,5 +24,5 @@ else
   git config --global --unset http.proxy
   git config --global --unset https.proxy
 
-  echo -e '\e[31mUnset proxy settings\e[m' >&2
+  echo -e '\e[36mUnset proxy settings\e[m' >&2
 fi
