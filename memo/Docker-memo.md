@@ -46,3 +46,8 @@ Environment = 'http_proxy=http://192.168.0.10:8080' 'https_proxy=http://192.168.
  }
 }
 ```
+
+docker-compose.yml同層で ~/dotfiles/.env へのシンボリックリンクを貼る\\
+```
+ln -s ~/dotfiles/.env path/to/directory
+```
