@@ -9,7 +9,7 @@ fi
 
 # vim config symboric link
 if [ ! -L ~/.config/nvim ]; then 
-  if [ ! -d ~/dotflies/temp/nvim ]; then mkdir ~/dotfiles/temp/nvim; fi
-  mv ~/.config/nvim ~/dotfiles/temp/nvim/init.vim;
+  if [ ! -d ~/dotflies/temp/nvim ]; then mkdir -p ~/dotfiles/temp/nvim; fi
+  mv ~/.config/nvim ~/dotfiles/temp/nvim;
   ln -s ~/dotfiles/nvim ~/.config/nvim;
 fi

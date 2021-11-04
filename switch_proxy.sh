@@ -29,7 +29,7 @@ else
   git config --global --unset http.proxy
   git config --global --unset https.proxy
 
-  #docker envファイルの削除
+  #docker envファイルの中身を削除
   rm ~/.env && touch ~/.env
 
   echo -e '\e[36mUnset proxy settings\e[m' >&2
