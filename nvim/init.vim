@@ -92,6 +92,6 @@ inoremap <silent> jj <ESC>
 " clipboard
 set clipboard+=unnamedplus
 
-" templete setting
-autocmd BufNewFile docker-compose.yml :0r ~/.config/nvim/templete/templete.yml
+" template setting
+autocmd BufNewFile docker-compose.yml :0r ~/.config/nvim/template/template.yml
 
