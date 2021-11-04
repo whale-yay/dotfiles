@@ -9,5 +9,5 @@ cd dotfiles
 bash ./link.sh
 ```
 
-#LICENSE
+# LICENSE
 MIT
