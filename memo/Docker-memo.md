@@ -27,7 +27,7 @@ restart:Always コンテナが10秒以上稼働していた場合、コンテナ
 ttyをTrueに設定するとコンテナに仮想端末を作らせてコンテナを終了させない
 
 ### Dockerでのプロキシの設定
-※認証プロキシの場合は http://USER:PASSWORD@url.com:8080 のようにする\
+※認証プロキシの場合は http://USER:PASSWORD@url.com:8080 のようにする
 
 /etc/systemd/system/docker.service.d/http-proxy.conf
 ```
@@ -48,7 +48,7 @@ Environment = 'http_proxy=http://192.168.0.10:8080' 'https_proxy=http://192.168.
 }
 ```
 
-docker-compose.yml同層で ~/dotfiles/.env へのシンボリックリンクを貼る\
+docker-compose.yml同層で ~/dotfiles/.env へのシンボリックリンクを貼る
 ```
 ln -s ~/dotfiles/.env path/to/directory
 ```
