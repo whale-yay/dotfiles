@@ -55,3 +55,9 @@ docker-compose.yml同層で ~/dotfiles/.env へのシンボリックリンクを
 ```
 ln -s ~/dotfiles/.env path/to/directory
 ```
+
+### DockerfileでCMD["go", "run", "main.go"] docker-compose command: go run main,go どっちがいいの
+https://ja.stackoverflow.com/q/30495
+
+
+
