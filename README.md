@@ -7,6 +7,7 @@ templete.envを参考に
 git clonse https://github.com/whale-yay/dotfiles.git
 cd dotfiles
 bash ./link.sh
+source ~/.bashrc
 ```
 
 # LICENSE
