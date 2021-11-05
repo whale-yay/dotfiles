@@ -131,6 +131,7 @@ alias dc='docker-compose'
 alias lt='tree'
 alias ivm="vim"
 alias imv="vim"
+alias vmi="vim"
 
 export GOROOT="/usr/local/go"
 
