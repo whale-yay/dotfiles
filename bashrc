@@ -119,6 +119,7 @@ fi
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/$USER/.local/bin
+export GOROOT="/usr/local/go"
 
 # remap caps to ctrl for gnome
 gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
@@ -133,6 +134,11 @@ alias ivm="vim"
 alias imv="vim"
 alias vmi="vim"
 
-export GOROOT="/usr/local/go"
+function g(){
+  command g++ $1 && ./a.out && rm a.out
+}
+alias py="python3"
+
+
 
 
