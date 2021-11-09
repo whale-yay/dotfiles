@@ -128,17 +128,27 @@ source $HOME/dotfiles/switch_proxy.sh
 
 alias bd="cd ../"
 alias so="source"
-alias dc='docker-compose'
 alias lt='tree'
+
+alias dc='docker-compose'
+
+alias vim="vim"
+alias vmi="vim"
 alias ivm="vim"
 alias imv="vim"
-alias vmi="vim"
+alias mvi="vim"
+alias miv="vim"
 
 function g(){
   command g++ $1 && ./a.out && rm a.out
 }
+
 alias py="python3"
 
-
-
-
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gpu="git pull"
+alias gcl="git clone"
+alias gb="git branch"
+alias gch="git checkout"
