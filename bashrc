@@ -129,6 +129,7 @@ source $HOME/dotfiles/switch_proxy.sh
 alias bd="cd ../"
 alias so="source"
 alias lt='tree'
+alias lta='tree -a'
 
 alias dc='docker-compose'
 
