@@ -58,6 +58,7 @@ set wildmode=full
 
 
 " visul setting
+set nowrap
 set cursorline
 set number
 set virtualedit=onemore
