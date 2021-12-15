@@ -59,5 +59,6 @@ ln -s ~/dotfiles/.env path/to/directory
 ### DockerfileでCMD["go", "run", "main.go"] docker-compose command: go run main,go どっちがいいの
 https://ja.stackoverflow.com/q/30495
 
-
-
+### docker-entrypoint-initdb.d の中でDBの初期設定を行う時
+sqlでなくshでデータの挿入等行う 
+sqlだと目的のデータベースに挿入してくれなかったりした気もする
