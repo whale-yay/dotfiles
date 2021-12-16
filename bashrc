@@ -153,3 +153,7 @@ alias gpu="git pull"
 alias gcl="git clone"
 alias gb="git branch"
 alias gch="git checkout"
+alias gst="git status"
+
+alias pyjson="python3 -m json.tool"
+# curl u/r/l | pyjson
