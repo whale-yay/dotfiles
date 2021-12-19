@@ -4,7 +4,7 @@ _RESOLV_CONF='/etc/resolv.conf'
 
 _DNS_STATE=$(grep ${_DNS} ${_RESOLV_CONF})
 
-_LATEST_DNS="$(cat ~/dotfiles/temp/dns_accessed_latest)"
+_LATEST_DNS="$(cat ~/dotfiles/tmp/dns_accessed_latest)"
 
 if [ "$_DNS_STATE" != "$_LATEST_DNS" ]; then
   source ~/dotfiles/switch_proxy_docker.sh
@@ -20,7 +20,7 @@ if [ -n "$_DNS_STATE" ] ; then
   git config --global http.proxy "$http_proxy"
   git config --global https.proxy "$http_proxy"
   
-  echo "$_DNS_STATE" > ~/dotfiles/temp/dns_accessed_latest
+  echo "$_DNS_STATE" > ~/dotfiles/tmp/dns_accessed_latest
 
   echo -e '\e[36mSet proxy settings\e[m' >&2
 
