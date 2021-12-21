@@ -13,7 +13,6 @@ fi
 if [ -n "$_DNS_STATE" ] ; then
   cp ~/dotfiles/.env ~/.env
 
-  # 記号が全部エスケープシーケンスになるから仕方なし
   sudo sed -i -e "s/PROXY=.*/PROXY=$http_proxy_for_sed\"/g" $_DOCKER_PROXY_FILE
   
   sudo systemctl daemon-reload
