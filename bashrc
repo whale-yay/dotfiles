@@ -152,7 +152,7 @@ alias gp="git push"
 alias gpu="git pull"
 alias gcl="git clone"
 alias gb="git branch"
-alias gch="git checkout"
+alias gsw="git switch"
 alias gst="git status"
 
 alias pyjson="python3 -m json.tool"
