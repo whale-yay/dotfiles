@@ -11,7 +11,7 @@ _DOCKER_PROXY_FILE=/etc/systemd/system/docker.service.d/http-proxy.conf
 
 _LATEST_DNS=$(grep nameserver ${_LATEST_DNS_FILE})
 
-echo ${_DNS_STATE} ${_LATEST_DNS}
+#echo ${_DNS_STATE} ${_LATEST_DNS}
 
 if [ "${_DNS_STATE}" = "${_LATEST_DNS}" ]; then
   :
