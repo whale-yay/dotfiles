@@ -1,4 +1,6 @@
-SET_PROXY(){
+_DOCKER_PROXY_FILE=/etc/systemd/system/docker.service.d/http-proxy.conf
+
+_SET_PROXY(){
   export http_proxy="http://$1"
   export https_proxy="$http_proxy"
   export ftp_proxy="$http_proxy"
@@ -21,7 +23,7 @@ SET_PROXY(){
   echo -e '\e[36mSet proxy settings\e[m' >&2
 }
 
-UNSET_PROXY(){
+_UNSET_PROXY(){
   #bash config
   export http_proxy=''
   export https_proxy=''
