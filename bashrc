@@ -156,4 +156,7 @@ alias gsw="git switch"
 alias gst="git status"
 
 alias pyjson="python3 -m json.tool"
+function gocover() {
+  command go test -cover -coverprofile=c.out && go tool cover -html=c.out -o c.html && google-chrome-stable c.html && rm c.out c.html
+}
 # curl u/r/l | pyjson
