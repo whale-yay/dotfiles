@@ -10,8 +10,6 @@ _SET_PROXY(){
   git config --global http.proxy "$http_proxy"
   git config --global https.proxy "$http_proxy"
   
-  echo "$_DNS_STATE" >$_LATEST_DNS_FILE
-
   # docker settings
   cp ~/dotfiles/.env ~/.env
 
