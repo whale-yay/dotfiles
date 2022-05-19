@@ -160,3 +160,5 @@ function gocover() {
   command go test -cover -coverprofile=c.out && go tool cover -html=c.out -o c.html && google-chrome-stable c.html && rm c.out c.html
 }
 # curl u/r/l | pyjson
+
+HISTTIMEFORMAT='%Y/%m/%d %H:%M:%S '
