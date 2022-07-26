@@ -32,4 +32,5 @@ set clipboard+=unnamedplus
 
 " template setting
 autocmd BufNewFile docker-compose.yml :0r ~/.config/nvim/template/template.yml
+autocmd BufNewFile *.cpp :0r ~/.config/nvim/template/template.cpp
 
