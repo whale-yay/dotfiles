@@ -143,6 +143,9 @@ alias miv="vim"
 function g(){
   command g++ $1 && ./a.out && rm a.out
 }
+function gt(){
+  command g++ -g -O0 $1 && (cat $2 | ./a.out)
+}
 
 alias py="python3"
 
@@ -162,3 +165,5 @@ function gocover() {
 # curl u/r/l | pyjson
 
 HISTTIMEFORMAT='%Y/%m/%d %H:%M:%S '
+
+alias python="python3"
