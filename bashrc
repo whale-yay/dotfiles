@@ -144,7 +144,7 @@ function g(){
   command g++ $1 && ./a.out && rm a.out
 }
 function gt(){
-  command g++ -g -O0 $1 && (cat $2 | ./a.out)
+  command g++ -std=c++14 -g -O0 -o a.out $1 && (cat $2 | ./a.out)
 }
 
 alias py="python3"
